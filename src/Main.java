@@ -1,7 +1,7 @@
 /* INSCRIVEZ VOTRE (OU VOS) PRÉNOM ET NOM CI-DESSOUS
    1: Ghilas Amarouche
    2:
-   Adresse URL de votre dépôt GitHub: https://github.com/rilesCL/tp1.git
+   Adresse URL de votre dépôt GitHub: https://github.com/rilesCL/TP1_GIT
 NE MODIFIEZ PAS LE RESTE DE CE FICHIER
 (sauf si c'est pour mettre certaines sections en commentaire le temps de tester votre code)
 */
