@@ -23,7 +23,7 @@ public class Configuration {
     }
 
     public Configuration(Configuration originale){
-        this.description = originale.description;
+        this.description = originale.description + " (copie)";
         this.prixMax = originale.prixMax;
         this.composants = new Composant[MAX_COMPOSANTS];
         this.nbComposants = originale.nbComposants;
