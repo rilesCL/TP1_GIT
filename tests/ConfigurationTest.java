@@ -31,9 +31,11 @@ class TesterAjouter {
     @Test
     void ajouterComposantDepassePrixMaxEchoue() {
         config.ajouter(composantCPU);
-        config.ajouter(composantGPU); // Cela devrait fonctionner
+        config.ajouter(composantGPU);
         assertFalse(config.ajouter(composantSSD), "L'ajout du SSD devrait échouer car il dépasse le prix maximum");
     }
+
+
 
 
 }
