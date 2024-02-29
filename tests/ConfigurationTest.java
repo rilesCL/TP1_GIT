@@ -8,6 +8,7 @@ class TesterAjouter {
     private Composant composantCPU;
     private Composant composantSSD;
     private Composant composantGPU;
+    private static final int TEST_MAX_COMPOSANTS = 20;
 
     @BeforeEach
     void setUp() {
@@ -35,7 +36,18 @@ class TesterAjouter {
         assertFalse(config.ajouter(composantSSD), "L'ajout du SSD devrait échouer car il dépasse le prix maximum");
     }
 
+    @Test
+    void ajouterComposantDepasseNombreMaxEchoue() {
 
+        for (int i = 0; i < TEST_MAX_COMPOSANTS; i++) {
+            assertTrue(config.ajouter(new Composant("RAM" + i, "RAM Gen" + i, "Brand" + i, 10.00)));
+        }
 
-
+        assertFalse(config.ajouter(new Composant("HDD", "Hard Drive", "Seagate", 50.00)), "L'ajout d'un composant supplémentaire devrait échouer car il dépasse le nombre maximum de composants");
+    }
 }
+
+
+
+
+
